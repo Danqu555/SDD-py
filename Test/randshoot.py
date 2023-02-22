@@ -11,8 +11,8 @@ def rand_num(minimum, maximum):
 # For example, as numbers from 1.5 to 2.5 get rounded to 2, meaning that both
 # 1 and 9 will only have a 0.5 range of values that will round to it.
 # Hence, using both the min and max value to correspond to a single value balances it out.
-min = 1
-max = 9
+min = 0
+max = 10
 
 # Generates random coordinates of the shot
 shootX = int(rand_num(min, max))
