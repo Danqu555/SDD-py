@@ -28,7 +28,7 @@ def checkmuteOff():
 def playmusic():
     mixer.music.load("Xtrullor_and_Zoftle - Gold.mp3")
     mixer.music.play(loops = -1)
-    mixer.music.set_volume(0.5)
+    mixer.music.set_volume(0.15)
     checkmuteOff()
 
 def checkmuteOn():
