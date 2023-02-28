@@ -18,7 +18,7 @@ def checkifmuteOn():
             mixer.music.stop()
             checkifmuteOff()
 
-# Defines playmusic, which plays the music.
+# Defines playmusic, which plays the music and activates checkifmuteOn.
 def playmusic():
     mixer.music.load("test/Xtrullor_and_Zoftle - Gold.mp3")
     mixer.music.play(loops = -1)
