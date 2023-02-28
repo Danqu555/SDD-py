@@ -20,7 +20,7 @@ def checkifmuteOn():
 
 # Defines playmusic, which plays the music.
 def playmusic():
-    mixer.music.load("Xtrullor_and_Zoftle - Gold.mp3")
+    mixer.music.load("test/Xtrullor_and_Zoftle - Gold.mp3")
     mixer.music.play(loops = -1)
     mixer.music.set_volume(0.15)
     checkifmuteOn()
