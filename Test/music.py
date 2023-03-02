@@ -7,14 +7,22 @@ from time import sleep
 pygame.init()
 mixer.init()
 
-# Placeholders
-muteButton = "placeholder, make one please"
+mute = "off"
+
+# Defines changevar, which changes the value of mute.
+def changeVar():
+    if mute == "off":
+        mute = "on" and 1
+    if mute == "on" and not 1:
+        mute = "off"
+    if mute == "on" and 1:
+        mute = "on"
 
 # Defines checkifmuteOn, which constantly checks if mute is ON. Activates when mute is OFF.
 def checkifmuteOn():
     while mixer.music.get_busy() is True:
         sleep(0.1)
-        if muteButton == "pressed":
+        if mute == "on":
             mixer.music.stop()
             checkifmuteOff()
 
@@ -29,7 +37,7 @@ def playmusic():
 def checkifmuteOff():
     while mixer.music.get_busy() is False:
         sleep(0.1)
-        if muteButton == "not active/off":
+        if mute == "off":
             playmusic()
 
 # Starts playing the music
